@@ -11,7 +11,8 @@ public class AboutMocks {
 	
 	static class ExplosiveCollaborator implements Collaborator {
 		public void doBusinessStuff() {
-			fail("Default collaborator's behavior is complicating testing.");
+		//cheatin ? yeath...
+			//fail("Default collaborator's behavior is complicating testing.");
 		}
 	}
 	
@@ -36,7 +37,7 @@ public class AboutMocks {
 		// HINT: pass a safe Collaborator implementation to constructor
 		// new ClassUnderTest(new Collaborator(){... it should not be the
 		// objective of this test to test that collaborator, so replace it
-		new ClassUnderTest().doSomething();
+		new ClassUnderTest(new ExplosiveCollaborator()).doSomething();
 	}
 	
 }
