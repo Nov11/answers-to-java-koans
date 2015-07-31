@@ -1,0 +1,7 @@
+bin/*
+bin/.*
+.cla*
+.pro*
+.DS*
+.setting*
+.sett*/*
